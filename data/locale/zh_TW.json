@@ -1,0 +1,93 @@
+{
+     "desktop": {
+        "title" : "La French Touch by Martell",
+        "subtitleFT" : "一段充滿驚奇的旅程", 
+        "notice1" : "請以手機造訪此頁面",
+        "notice2" : "僅限iOS8+或Android 4.4+版本"
+        },     
+        
+    "home":{
+        "startBtn": "繼續"
+    },
+    
+    "nowebgl":{
+        "text": "很抱歉，<br/>你的瀏覽器似乎不支援WebGL .</br> 請下載下列其中<br/>一項瀏覽器 :",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "yandex":"Yandex",
+        "ucbrowser":"UC-Browser",
+        "choose":"選擇瀏覽器"
+    },
+	"compatibility":{
+        "text": "Your browser seems </br> not to support webgl.</br> Please download</br> another browser:",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "choose":"Choose your browser",
+        "continue":"or Continue",
+        "degraded": "experience may be <br> degraded"
+    },
+
+    "intro": {
+        "legals" : "<span class='line1'>你必須達到所屬</br>國家法定飲酒年</br>齡才能開啟此段旅程</span></br>",
+        "langue" : "語言",
+        "enterBtn" : "好",
+        "subtitleFT" : "一段充滿驚奇的旅程",
+        "launchXP" : "開始體驗",
+        "get" : "開始體驗",
+        "getyour" : "使用",
+        "immersive" : "以得到最佳3D體驗效果",
+        "order" : "開始體驗",
+        "ordernow" : "立即訂購",
+        "play" : "開始體驗",
+        "launch" : "開始",
+        "skipBtn" : "跳過",
+        "launchBtn" : "開始",
+        "loading" : "下載中",
+        "titleLoader" : "將你的手機放入<br/>Cardboard",
+        "bestxp" : "請連結Wi-fi並關掉手機螢幕自動鎖定設定以達最佳體驗效果",
+        "tutorial" : "<span class='line1'>控制燕子循著設定路線飛行<br>獲取物品即可得分</span>"
+    },
+    
+    "outro": {
+        "congrats": {
+            "sub" : "你已完成這段旅程",
+            "notice" : "現在你可以把手機從Cardboard中取出",
+            "congratstitle" : "恭喜你!"
+        },
+        "score": {
+            "title" : "得分",
+            "items1": "獲取",
+            "items2": "個物品",
+            "points" : "分",
+            "replay" : "再玩一次",
+            "share" : "分享",
+            "congratulation" : "恭喜你!",
+            "onshare" : "长按二维码关注<br>马爹利名士微信<br>加入派对锋潮"
+        },     
+         "share": {
+            "title" : "La French Touch by Martell",
+            "item1" : "我在旅程中搜集到",
+            "item2" : "個物品，你能超越我嗎?"
+        },
+   
+        "popin": {
+            "share" : "分享",
+            "link" : "LaFrenchTouch.unique.url"
+        }
+    },
+    "meta": {
+        "defaut" : {
+            "title": "La French Touch by Martell",
+            "description": "一段充滿驚奇的旅程"
+        },
+        "score": {
+            "title": "La French Touch by Martell",
+            "description1": "我在旅程中搜集到",
+            "description2": "個物品，你能超越我嗎?"
+        },
+        "other": {
+            "title": "La French Touch by Martell."
+        }
+    }
+
+}

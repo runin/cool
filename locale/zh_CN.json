@@ -1,0 +1,89 @@
+{
+    "desktop": {
+        "title": "La French Touch by Martell",
+        "subtitleFT": "畅游虚拟实境",
+        "notice1": "请打开手机体验",
+        "notice2": "支持ios8+和android4.4+及以上版本"
+    },
+    "home": {
+        "startBtn": "确定"
+    },
+    "nowebgl":{
+        "text": "很遗憾，您的浏览器无法获得最佳体验 </br>很遗憾，您的浏览器无法获得最佳体验",
+        "chrome":"谷歌浏览器",
+        "firefox":"火狐浏览器",
+        "yandex":"Yandex",
+        "ucbrowser":"UC浏览器",
+        "choose":"选择浏览器"
+    },
+	"compatibility":{
+        "text": "Your browser seems </br> not to support webgl.</br> Please download</br> another browser:",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "choose":"Choose your browser",
+        "continue":"or Continue",
+        "degraded": "experience may be <br> degraded"
+    },
+    
+    "intro": {
+        "legals": "确定您已满18岁",
+        "langue": "语言",
+        "enterBtn": "确定",
+        "subtitleFT": "畅游虚拟实境",
+        "launchXP": "开始体验",
+        "get": "即刻免费申领",
+        "getyour": "即刻免费申领",
+        "immersive": "申领虚拟实境眼镜，获得3D体验",
+        "order": "即刻免费申领",
+        "ordernow" : "即刻免费申领",
+        "play": "裸眼体验",
+        "launch": "开始",
+        "skipBtn": "跳过",
+        "launchBtn": "开始",
+        "loading": "loading",
+        "titleLoader": "将手机放入虚拟实境眼镜中",
+        "bestxp": "为了更好地体验，请链接</br>WI-FI，戴上耳机并取消自动锁屏",
+        "tutorial" : "控制雨燕飞行的方向,</br>穿过菱形，获得分数</br>越接近菱形的中心得分越高。"
+    },
+
+    "outro": {
+        "congrats": {
+            "congratstitle": "恭喜您！",
+            "sub": "已完成法式派对锋潮之旅体验",
+            "notice": "您可以将手机从虚拟实境眼镜中取出"
+        },
+        "score": {
+            "title": "得分",
+            "items1": "收集了",
+            "items2": "个道具",
+            "points": "分",
+            "replay": "重新体验",
+            "share": "炫耀我的成绩",
+            "congratulation": "恭喜您",
+            "onshare" : "长按二维码关注<br>马爹利名士微信<br>加入派对锋潮"
+        },
+        "share": {
+            "title": "马爹利名士法式派对锋潮之旅",
+            "item1": "三分钟虚拟飞行，我驾驭派对能量",
+            "item2": "分，有胆来挑战"
+        },
+        "popin": {
+            "share": "炫耀我的成绩",
+            "link": "LaFrenchTouch.unique.url"
+        }
+    },
+    "meta": {
+        "defaut": {
+            "title": "马爹利名士法式派对锋潮之旅",
+            "description": "三分钟虚拟飞行，有胆来挑战？"
+        },
+        "score": {
+            "title": "马爹利名士法式派对锋潮之旅",
+            "description1": "三分钟虚拟飞行，我驾驭派对能量",
+            "description2": "分，有胆来挑战？!"
+        },
+        "other": {
+            "title": "马爹利名士法式派对锋潮之旅"
+        }
+    }
+}

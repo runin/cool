@@ -1,0 +1,94 @@
+{
+     "desktop": {
+        "title" : "La French Touch bởi Martell",
+        "subtitleFT" : "Một hành trình bất ngờ", 
+        "notice1" : "Hãy vào xem trang này từ điện thoại của bạn",
+        "notice2" : "Dành cho iOS8+ hoặc Android 4.4+"
+        },     
+        
+    "home":{
+        "startBtn": "Tiếp tục"
+    },
+    
+    "nowebgl":{
+        "text": "Rất tiếc, nhưng trình duyệt của bản không hỗ trợ WebGL.</br> Vui lòng tải một trong <br/>những trình duyệt sau :",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "yandex":"Yandex",
+        "ucbrowser":"UC-Browser",
+        "choose":"Chọn trình duyệt"
+    },
+    
+	"compatibility":{
+        "text": "Your browser seems </br> not to support webgl.</br> Please download</br> another browser:",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "choose":"Choose your browser",
+        "continue":"or Continue",
+        "degraded": "experience may be <br> degraded"
+    },
+
+    "intro": {
+        "legals" : "<span class='line1'>Bạn cần phải nằm trong</span> </br> <span class='line2'>độ tuổi uống rượu để chơi </span> </br> <span class='line3'>trò chơi này</span>",
+        "langue" : "Ngôn ngữ",
+        "enterBtn" : "Đồng ý",
+        "subtitleFT" : "Một hành trình bất ngờ",
+        "launchXP" : "Bắt đầu trải nghiệm",
+        "get" : "Nhận một Cardboard miễn phí",
+        "getyour" : "Sử dụng",
+        "immersive" : "để có trải nghiệm 3D tuyệt vời",
+        "order" : "Nhận một Cardboard miễn phí",
+        "ordernow" : "Đặt hàng ngay",
+        "play" : "Bắt đầu trải nghiệm",
+        "launch" : "Phóng",
+        "skipBtn" : "Bỏ qua bước này",
+        "launchBtn" : "Phóng",
+        "loading" : "Đang tải",
+        "titleLoader" : "Đặt điện thoại <br/> vào Cardboard",
+        "bestxp" : "Để trải nghiệm trọn vẹn, hãy kết nối wi-fi và tắt chế độ khóa tự động màn hình",
+        "tutorial" : "<span class='line1'>Điều khiển chim </span><br><span class='line2'>én bay hết đoạn đường</span><br><span class='line3'> và thu nhặt những </span><br><span class='line4'> món đồ để được</span><br><span class='line5'>cộng điểm.</span>"
+    },
+    
+    "outro": {
+        "congrats": {
+            "sub" : "Bạn đã hoàn thành chuyến đi",
+            "notice" : "Bạn có thể tháo điện thoại ra </br> khỏi Cardboard .",
+            "congratstitle" : "Chúc mừng bạn"
+        },
+        "score": {
+            "title" : "Bảng điểm",
+            "items1": "",
+            "items2": "món đồ ",
+            "points" : "điểm",
+            "replay" : "Chơi lại",
+            "share" : "Chia sẻ",
+            "congratulation" : "Chúc mừng bạn",
+            "onshare" : "长按二维码关注<br>马爹利名士微信<br>加入派对锋潮"
+        },     
+         "share": {
+            "title" : "La French Touch bởi Martell",
+            "item1" : "Tôi đã hoàn thành chuyến đi của mình và thu được",
+            "item2" : "món đồ. Bạn có thể làm hơn vậy không?"
+        },
+           
+        "popin": {
+            "share" : "Chia sẻ",
+            "link" : "LaFrenchTouch.unique.url"
+        }
+    },
+    "meta": {
+        "defaut" : {
+            "title": "La French Touch bởi Martell",
+            "description": "Một hành trình bất ngờ"
+        },
+        "score": {
+            "title": "La French Touch bởi Martell",
+            "description1": "Tôi đã hoàn thành chuyến đi của mình và thu được",
+            "description2": "món đồ. Bạn có thể làm hơn vậy không?"
+        },
+        "other": {
+            "title": "La French Touch bởi Martell."
+        }
+    }
+
+}

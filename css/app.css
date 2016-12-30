@@ -1,0 +1,2098 @@
+#mainCanvas,body,html {
+    width: 100%;
+    height: 100%
+}
+
+#mainCanvas,.app,body,html {
+    height: 100%
+}
+
+html {
+    position: absolute
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background-color: #000
+}
+
+#mainCanvas {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.app.desktop #intro,.app.desktop #outro,.app.desktop .home-logo,.app.desktop .home-start-btn {
+    display: none!important
+}
+
+.dg.main .close-button {
+    display: none
+}
+
+#fps {
+    display: none!important
+}
+
+.home-start-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    transform: translate(-50%,-50%);
+    display: none
+}
+
+.v-align:before,button .button-text {
+    display: inline-block
+}
+
+button {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background: 0 0;
+    font: inherit;
+    line-height: normal;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+button:focus,input[type=submit],input[type=reset],input[type=button] {
+    outline: 0
+}
+
+.v-align {
+    text-align: center;
+    white-space: nowrap
+}
+
+.v-align:before {
+    content: ' ';
+    font-size: 0;
+    height: 100%;
+    width: 0;
+    vertical-align: middle
+}
+
+button {
+    -webkit-appearance: none;
+    font-family: news-gothic-mt-bold;
+    letter-spacing: .5em;
+    background-color: transparent;
+    width: 184px;
+    height: 44px;
+    border: none;
+    color: #fff;
+    font-size: 9px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer
+}
+
+button .button-top {
+    position: absolute;
+    background: url(../img/intro/button/top.png) no-repeat;
+    background-size: 184px 2px;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%
+}
+
+button .button-left,button .button-right {
+    width: 2px;
+    height: 42px;
+    background-color: #fff;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    position: absolute
+}
+
+button .button-left {
+    left: 0;
+    top: 0
+}
+
+button .button-right {
+    right: 0;
+    top: 2px
+}
+
+button .button-bottom {
+    position: absolute;
+    background: url(../img/intro/button/bottom.png) no-repeat;
+    background-size: 184px 2px;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%
+}
+
+.preloader,.wechat-layer {
+    height: 100%;
+    width: 100%;
+    position: absolute
+}
+
+@font-face {
+    font-family: GaramondBE-Italic;
+    src: url(../font/GaramondBE-Italic.eot?#iefix) format("embedded-opentype"),url(../font/GaramondBE-Italic.woff) format("woff"),url(../font/GaramondBE-Italic.ttf) format("truetype"),url(../font/GaramondBE-Italic.svg#GaramondBE-Italic) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Martell-Regular;
+    src: url(../font/Martell-Regular.eot?#iefix) format("embedded-opentype"),url(../font/Martell-Regular.woff) format("woff"),url(../font/Martell-Regular.ttf) format("truetype"),url(../font/Martell-Regular.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: news-gothic-mt-bold;
+    src: url(../font/news-gothic-mt-bold.eot?#iefix) format("embedded-opentype"),url(../font/news-gothic-mt-bold.woff) format("woff"),url(../font/news-gothic-mt-bold.ttf) format("truetype"),url(../font/news-gothic-mt-bold.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.preloader {
+    left: 0;
+    top: 0;
+    background-color: #0a1f33;
+    z-index: 2048
+}
+
+.preloader .pourcent {
+    font-size: 9px;
+    position: absolute;
+    top: -2px
+}
+
+.intro-xp-loader-text,.preloader-percent {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    width: 100%;
+    margin-top: -4px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: Martell-Regular;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .2em
+}
+
+.intro-xp-loader-text .pourcent {
+    font-size: 9px;
+    position: absolute;
+    top: -2px
+}
+
+#preloader-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -79px;
+    margin-top: -85px
+}
+
+.wechat-layer {
+    background-color: rgba(0,0,0,.7);
+    z-index: 10000
+}
+
+.wechat-layer .arrow-wechat {
+    background: url(../img/intro/arrow-wechat.png);
+    background-size: 74px 76px;
+    height: 74px;
+    width: 76px;
+    position: absolute;
+    right: 20px;
+    top: 6px
+}
+
+.wechat-layer .text {
+    color: #fff;
+    width: 20px;
+    position: absolute;
+    right: 100px;
+    top: 85px
+}
+
+.separator-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 37px;
+    overflow: hidden;
+    margin-top: -5px
+}
+
+.separator-wrapper .separator {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    opacity: .6;
+    filter: alpha(opacity=60)
+}
+
+.intro-tuto {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 35px
+}
+
+.intro-tuto .icon-bird {
+    background: url(../img/intro/icon-bird.png);
+    background-size: 115px 100px;
+    width: 115px;
+    height: 100px;
+    display: inline-block
+}
+
+.intro-tuto .intro-cs-legals {
+    font-family: Martell-Regular;
+    color: #fff;
+    font-size: 9px;
+    line-height: 31px;
+    letter-spacing: .7em;
+    margin-bottom: 45px;
+    margin-top: 50px
+}
+
+html[lang=vi_VNM] .intro-tuto .intro-cs-legals {
+    font-family: arial;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 30px
+}
+
+body.landscape .intro-tuto .intro-cs-legals {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+html[lang=zh_CN] .intro-tuto .intro-cs-legals,html[lang=zh_TW] .intro-tuto .intro-cs-legals {
+    font-size: 11px
+}
+
+.intro-tuto .intro-cs-legals .line1 {
+    margin-left: 13px
+}
+
+.intro-tuto .intro-cs-legals .line2 {
+    margin-left: 3px
+}
+
+.intro-tuto .intro-cs-legals .line3 {
+    margin-left: 2px
+}
+
+html[lang=vi_VNM] .intro-tuto .intro-cs-legals .line3 {
+    margin-left: 15px
+}
+
+html[lang=vi_VNM] .intro-tuto .intro-cs-legals .line4 {
+    margin-left: 1px
+}
+
+html[lang=vi_VNM] .intro-tuto .intro-cs-legals .line5 {
+    margin-left: 6px
+}
+
+.intro-tuto .square {
+    height: 100px;
+    position: relative
+}
+
+.intro-tuto .square div {
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
+.intro-tuto .square .square1 {
+    background: url(../img/intro/square1.png);
+    background-size: 42px 42px;
+    width: 42px;
+    height: 42px;
+    margin-left: -65px;
+    margin-top: -21px
+}
+
+.intro-tuto .square .square2 {
+    background: url(../img/intro/square2.png);
+    background-size: 66px 66px;
+    width: 66px;
+    height: 66px;
+    margin-left: -59px;
+    margin-top: -33px
+}
+
+.intro-tuto .square .square3 {
+    background: url(../img/intro/square3.png);
+    background-size: 104px 99px;
+    width: 104px;
+    height: 99px;
+    margin-left: -52px;
+    margin-top: -49.5px
+}
+
+.intro-tuto .intro-xp-loader-bestxp {
+    font-family: Martell-Regular;
+    text-transform: uppercase;
+    position: absolute;
+    width: 310px;
+    text-align: center;
+    left: 50%;
+    margin-left: -155px;
+    font-size: 8px;
+    color: #fff;
+    white-space: normal;
+    letter-spacing: .3em;
+    line-height: 11px;
+    bottom: 15px
+}
+
+html[lang=zh_CN] .intro-tuto .intro-xp-loader-bestxp {
+    font-size: 11px;
+    line-height: 17px
+}
+
+html[lang=zh_TW] .intro-tuto .intro-xp-loader-bestxp {
+    font-size: 11px;
+    line-height: 17px;
+    width: 220px;
+    margin-left: -110px
+}
+
+html[lang=vi_VNM] .intro-tuto .intro-xp-loader-bestxp {
+    font-family: arial;
+    text-transform: uppercase;
+    margin-left: -128px;
+    width: 256px;
+    line-height: 12px;
+    bottom: 13px
+}
+
+.intro-tuto .icon-wifi {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    margin-left: -10px
+}
+
+body.landscape .intro-tuto .icon-wifi,body.landscape .intro-tuto .intro-xp-loader-bestxp {
+    display: none
+}
+
+.intro-tuto button {
+    margin-bottom: 30px
+}
+
+.nowebgl {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center
+}
+
+.nowebgl .dropdown {
+    position: relative;
+    margin-top: 30px
+}
+
+.nowebgl .dropdown select {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0
+}
+
+.nowebgl .dropdown span {
+    font-family: news-gothic-mt-bold;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .5em
+}
+
+.nowebgl .dropdown .arrow {
+    background: url(../img/intro/arrow-bottom.png);
+    background-size: 12px 7px;
+    width: 12px;
+    height: 7px;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.nowebgl .compatibility {
+    font-size: 11px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: .7em;
+    line-height: 30px;
+    font-family: Martell-Regular;
+    z-index: 1;
+    vertical-align: middle
+}
+
+html[lang=vi_VNM] .nowebgl .compatibility {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .nowebgl .compatibility,html[lang=zh_TW] .nowebgl .compatibility {
+    font-size: 11px
+}
+
+.nowebgl .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/outro/background-scoring.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.arrow.arrow-left,.arrow.arrow-right {
+    width: 10px;
+    height: 15px;
+    margin-top: -35px;
+    position: absolute
+}
+
+.icon-logo {
+    position: absolute;
+    left: 50%;
+    top: 22px;
+    margin-left: -44px
+}
+
+.arrow.arrow-left {
+    background: url(../img/intro/arrow.png) no-repeat;
+    background-size: 10px 15px;
+    left: 35px;
+    top: 50%
+}
+
+.arrow.arrow-right {
+    background: url(../img/intro/arrow.png) no-repeat;
+    background-size: 10px 15px;
+    right: 35px;
+    top: 50%;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.intro-cs {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.intro-cs .intro-cs-legals {
+    font-family: Martell-Regular;
+    color: #fff;
+    font-size: 9px;
+    line-height: 40px;
+    letter-spacing: .7em;
+    margin-bottom: 60px
+}
+
+html[lang=vi_VNM] .intro-cs .intro-cs-legals {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .intro-cs .intro-cs-legals,html[lang=zh_TW] .intro-cs .intro-cs-legals {
+    font-size: 11px
+}
+
+.intro-cs .intro-cs-legals .line1 {
+    margin-left: 13px
+}
+
+.intro-cs .intro-cs-legals .line2 {
+    margin-left: 9px
+}
+
+.intro-language {
+    position: absolute;
+    width: 200px;
+    bottom: 27px;
+    left: 50%;
+    margin-left: -100px
+}
+
+.intro-language select {
+    width: 65px;
+    height: 59px;
+    display: inline-block;
+    position: absolute;
+    padding-top: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    left: 50%;
+    margin-left: -32px;
+    top: 50%;
+    margin-top: -32px;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.intro-language .icon-language {
+    display: block;
+    margin: 0 auto
+}
+
+.intro-language .text-language {
+    display: block;
+    margin: 12px auto 0;
+    font-size: 7px;
+    color: #fff;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: Martell-Regular;
+    text-align: center
+}
+
+html[lang=vi_VNM] .intro-language .text-language {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .intro-language .text-language,html[lang=zh_TW] .intro-language .text-language {
+    font-size: 9px
+}
+
+#intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center
+}
+
+#intro .intro-cs,#intro .intro-home {
+    vertical-align: middle;
+    display: inline-block
+}
+
+#intro .intro-home .intro-home-subtitle {
+    font-family: Martell-Regular;
+    font-size: 7px;
+    color: #fff;
+    letter-spacing: .7em;
+    margin-bottom: 30%;
+    margin-top: 15%
+}
+
+html[lang=vi_VNM] #intro .intro-home .intro-home-subtitle {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #intro .intro-home .intro-home-subtitle,html[lang=zh_TW] #intro .intro-home .intro-home-subtitle {
+    font-size: 12px
+}
+
+#intro .intro-home .intro-home-get {
+    display: block;
+    margin: 19% auto 0;
+    font-size: 15px;
+    color: #fff;
+    font-family: GaramondBE-Italic;
+    letter-spacing: .1em
+}
+
+html[lang=vi_VNM] #intro .intro-home .intro-home-get {
+    font-family: arial;
+    font-style: italic
+}
+
+html[lang=zh_CN] #intro .intro-home .intro-home-get,html[lang=zh_TW] #intro .intro-home .intro-home-get {
+    font-size: 17px
+}
+
+#intro .intro-home .intro-home-launch {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: .1em;
+    font-family: GaramondBE-Italic;
+    margin-bottom: 15px
+}
+
+html[lang=vi_VNM] #intro .intro-home .intro-home-launch {
+    font-family: arial;
+    font-style: italic
+}
+
+html[lang=zh_CN] #intro .intro-home .intro-home-launch,html[lang=zh_TW] #intro .intro-home .intro-home-launch {
+    font-size: 17px;
+    margin-bottom: 12px
+}
+
+#intro .intro-home .intro-home-logo .intro-home-la {
+    margin-bottom: 22px
+}
+
+#intro .intro-home .intro-home-logo .intro-home-la div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 3px
+}
+
+#intro .intro-home .intro-home-logo .intro-home-french {
+    margin-bottom: 16px
+}
+
+#intro .intro-home .intro-home-logo .intro-home-french div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 7.5px
+}
+
+#intro .intro-home .intro-home-logo .intro-home-touch div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 7px
+}
+
+#intro .intro-home .icon-cardboard {
+    margin: 0 auto
+}
+
+#intro .intro-order {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 110px
+}
+
+body.landscape #intro .intro-order {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 20px
+}
+
+#intro .intro-order a {
+    color: #fff;
+    text-decoration: none
+}
+
+#intro .intro-order .intro-order-title {
+    font-family: Martell-Regular;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: .5em
+}
+
+html[lang=zh_CN] #intro .intro-order .intro-order-title,html[lang=zh_TW] #intro .intro-order .intro-order-title {
+    font-size: 16px
+}
+
+html[lang=vi_VNM] #intro .intro-order .intro-order-title {
+    font-family: arial;
+    text-transform: uppercase;
+    line-height: 18px
+}
+
+#intro .intro-order .intro-order-title .intro-order-cardboardtext {
+    background: url(../img/intro/cardboardText.png) no-repeat;
+    background-size: 259px 20px;
+    margin: 19px auto 22px;
+    width: 259px;
+    height: 20px
+}
+
+#intro .intro-order .intro-order-subtitle {
+    font-size: 8px;
+    font-family: Martell-Regular;
+    color: #fff;
+    letter-spacing: .5em;
+    margin-bottom: 40px;
+    overflow: hidden
+}
+
+html[lang=vi_VNM] #intro .intro-order .intro-order-subtitle {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #intro .intro-order .intro-order-subtitle,html[lang=zh_TW] #intro .intro-order .intro-order-subtitle {
+    font-size: 11px
+}
+
+#intro .intro-order .intro-order-play {
+    font-size: 9px;
+    font-family: Martell-Regular;
+    color: #fff;
+    letter-spacing: .5em;
+    margin-top: 82px;
+    margin-bottom: 32px
+}
+
+html[lang=vi_VNM] #intro .intro-order .intro-order-play {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #intro .intro-order .intro-order-play,html[lang=zh_TW] #intro .intro-order .intro-order-play {
+    font-size: 11px
+}
+
+body.landscape #intro .intro-order .intro-order-play {
+    margin-top: 32px;
+    margin-bottom: 32px
+}
+
+#intro .intro-tpack {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+
+#intro .intro-tpack .button-last {
+    display: none
+}
+
+.landscape #intro .intro-tpack {
+    margin-top: -100px
+}
+
+#intro .intro-tpack .intro-tpack-instruction {
+    color: #fff;
+    font-size: 9px;
+    font-family: Martell-Regular;
+    letter-spacing: .2em;
+    line-height: 15px;
+    text-transform: uppercase
+}
+
+html[lang=vi_VNM] #intro .intro-tpack .intro-tpack-instruction {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #intro .intro-tpack .intro-tpack-instruction,html[lang=zh_TW] #intro .intro-tpack .intro-tpack-instruction {
+    font-size: 11px
+}
+
+#intro .intro-tpack .intro-tpack-cardboard {
+    width: 320px;
+    height: 320px;
+    margin-left: -50px
+}
+
+#intro .intro-tpack .intro-tpack-steps {
+    margin-bottom: 30px;
+    margin-top: -10px
+}
+
+#intro .intro-tpack .intro-tpack-steps div {
+    display: inline-block;
+    padding: 7px 9px
+}
+
+#intro .intro-tpack .intro-tpack-steps div span {
+    height: 4px;
+    width: 4px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: block
+}
+
+#intro .intro-tpack .intro-tpack-steps div.selected span {
+    background-color: #fff
+}
+
+.intro-xp-loader {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%
+}
+
+.intro-xp-loader .intro-xp-loader-title {
+    font-size: 9px;
+    color: #fff;
+    font-family: Martell-Regular;
+    letter-spacing: .2em;
+    line-height: 15px;
+    margin-top: 110px;
+    position: absolute;
+    left: 50%;
+    margin-left: -74px
+}
+
+html[lang=vi_VNM] .intro-xp-loader .intro-xp-loader-title {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .intro-xp-loader .intro-xp-loader-title,html[lang=zh_TW] .intro-xp-loader .intro-xp-loader-title {
+    font-size: 13px
+}
+
+.intro-xp-loader .intro-xp-loader-wrapper {
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
+}
+
+.intro-xp-loader .intro-xp-loader-wrapper .intro-xp-loader-canvas {
+    position: absolute;
+    top: 50%;
+    margin-left: -73px;
+    margin-top: -85px;
+    left: 50%
+}
+
+.intro-xp-loader .intro-xp-square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -50px
+}
+
+.app.desktop,.app.desktop #intro-desktop {
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+.intro-xp-loader .intro-xp-loader-bestxp {
+    font-family: Martell-Regular;
+    text-transform: uppercase;
+    position: absolute;
+    width: 310px;
+    text-align: center;
+    left: 50%;
+    margin-left: -155px;
+    font-size: 8px;
+    color: #fff;
+    white-space: normal;
+    letter-spacing: .3em;
+    line-height: 11px;
+    bottom: 15px
+}
+
+html[lang=vi_VNM] .intro-xp-loader .intro-xp-loader-bestxp {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .intro-xp-loader .intro-xp-loader-bestxp,html[lang=zh_TW] .intro-xp-loader .intro-xp-loader-bestxp {
+    font-size: 11px;
+    line-height: 13px
+}
+
+.intro-xp-loader .icon-wifi {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    margin-left: -10px
+}
+
+#intro-desktop {
+    display: none
+}
+
+.app.desktop #intro,.app.desktop .logo {
+    display: none;
+    visibility: visible;
+    z-index: 1;
+    position: relative
+}
+
+.app.desktop #intro-desktop {
+    display: block;
+    text-align: center
+}
+
+.app.desktop #intro-desktop img.background {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+.app.desktop #intro-desktop>div {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.app.desktop #intro-desktop .intro-home-logo div {
+    font-size: 0
+}
+
+.app.desktop #intro-desktop .intro-home-logo .intro-home-la {
+    margin-bottom: 22px
+}
+
+.app.desktop #intro-desktop .intro-home-logo .intro-home-la div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 3px
+}
+
+.app.desktop #intro-desktop .intro-home-logo .intro-home-french {
+    margin-bottom: 16px
+}
+
+.app.desktop #intro-desktop .intro-home-logo .intro-home-french div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 7.5px
+}
+
+.app.desktop #intro-desktop .intro-home-logo .intro-home-touch div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 7px
+}
+
+.app.desktop #intro-desktop .intro-home-notice1 {
+    font-family: Martell-Regular;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    letter-spacing: .35em;
+    z-index: 1;
+    position: relative
+}
+
+html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-notice1 {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-notice1,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-notice1 {
+    font-size: 22px
+}
+
+.app.desktop #intro-desktop .intro-home-notice2 {
+    font-family: Martell-Regular;
+    font-size: 16px;
+    line-height: 27px;
+    color: #d0984a;
+    letter-spacing: .35em;
+    position: relative;
+    z-index: 1
+}
+
+html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-notice2 {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-notice2,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-notice2 {
+    font-size: 18px
+}
+
+.app.desktop #intro-desktop .intro-home-subtitle {
+    font-family: Martell-Regular;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: .7em;
+    margin-bottom: 120px;
+    margin-top: 334px;
+    z-index: 1;
+    position: relative
+}
+
+html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-subtitle {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-subtitle,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-subtitle {
+    font-size: 17px
+}
+
+.app.desktop #intro-desktop .intro-home-launch {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: .1em;
+    font-family: GaramondBE-Italic;
+    margin-bottom: 7%
+}
+
+html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-launch {
+    font-family: arial;
+    font-style: italic
+}
+
+html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-launch,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-launch {
+    font-size: 17px
+}
+
+.app.desktop #intro-desktop .intro-header {
+    background: url(../img/intro/desktop/header.png);
+    width: 552px;
+    height: 343px;
+    margin: 75px auto auto -276px;
+    position: absolute;
+    left: 50%;
+    z-index: 1
+}
+
+.app.desktop #intro-desktop .intro-logo {
+    background: url(../img/intro/desktop/logo.png);
+    width: 157px;
+    height: 110px;
+    display: block;
+    margin: 40px auto 0;
+    z-index: 1;
+    position: relative
+}
+
+.app.desktop #intro-desktop .intro-qr {
+    background: url(../img/intro/desktop/qr.png);
+    width: 248px;
+    height: 252px;
+    margin: 50px auto 87px;
+    z-index: 1;
+    position: relative
+}
+
+.app.desktop #intro-desktop .intro-language {
+    display: none
+}
+
+@media only screen and (max-height: 1075px) {
+    .app.desktop #intro-desktop .intro-header {
+        background:url(../img/intro/desktop/header.png);
+        width: 300px;
+        height: 186px;
+        background-size: 300px 186px;
+        margin: 45px auto auto -150px;
+        position: absolute;
+        left: 50%
+    }
+
+    .app.desktop #intro-desktop .intro-home-subtitle {
+        font-family: Martell-Regular;
+        font-size: 10px;
+        color: #fff;
+        letter-spacing: .7em;
+        margin-bottom: 160px;
+        margin-top: 188px;
+        z-index: 1;
+        position: relative
+    }
+
+    html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-subtitle {
+        font-family: arial;
+        text-transform: uppercase
+    }
+
+    html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-subtitle,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-subtitle {
+        font-size: 12px
+    }
+
+    .app.desktop #intro-desktop .intro-qr {
+        background: url(../img/intro/desktop/qr.png);
+        width: 138px;
+        height: 140px;
+        background-size: 138px 140px;
+        margin: -63px auto 50px
+    }
+
+    .app.desktop #intro-desktop .intro-home-notice1 {
+        font-family: Martell-Regular;
+        font-size: 15px;
+        color: #fff;
+        letter-spacing: .35em
+    }
+
+    html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-notice1 {
+        font-family: arial;
+        text-transform: uppercase
+    }
+
+    html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-notice1,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-notice1 {
+        font-size: 17px
+    }
+
+    .app.desktop #intro-desktop .intro-home-notice2 {
+        font-family: Martell-Regular;
+        font-size: 11px;
+        line-height: 27px;
+        color: #d0984a;
+        letter-spacing: .35em
+    }
+
+    html[lang=vi_VNM] .app.desktop #intro-desktop .intro-home-notice2 {
+        font-family: arial;
+        text-transform: uppercase
+    }
+
+    html[lang=zh_CN] .app.desktop #intro-desktop .intro-home-notice2,html[lang=zh_TW] .app.desktop #intro-desktop .intro-home-notice2 {
+        font-size: 13px
+    }
+
+    .app.desktop #intro-desktop .intro-logo {
+        background: url(../img/intro/desktop/logo.png);
+        width: 109px;
+        height: 76px;
+        display: block;
+        margin: 50px auto 0;
+        background-size: 109px 76px
+    }
+}
+
+#outro,#outro .outro-background,#outro .outro-scoring {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+body.ios .intro-home-subtitle {
+    margin-bottom: 15%!important;
+    margin-top: 9%!important
+}
+
+body.ios .arrow.arrow-left,body.ios .arrow.arrow-right {
+    margin-top: 5px!important
+}
+
+body.ios #intro .intro-home .intro-home-get {
+    margin-top: 12%
+}
+
+body.ios.iphone5 .intro-home-subtitle {
+    margin-bottom: 7%!important
+}
+
+body.ios.iphone5 .intro-tuto .intro-cs-legals {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+body.ios.iphone5 #intro .intro-order {
+    margin-bottom: 70px
+}
+
+body.ios.iphone5 #intro .intro-order .intro-order-play {
+    margin-top: 50px;
+    margin-bottom: 32px
+}
+
+body.landscape .intro-xp-loader .intro-xp-loader-title {
+    margin-top: 30px
+}
+
+body.landscape .intro-xp-loader .intro-xp-loader-bestxp {
+    bottom: 7px
+}
+
+body.landscape .intro-xp-loader .icon-wifi {
+    bottom: 50px
+}
+
+body.landscape .logo {
+    visibility: hidden
+}
+
+#outro {
+    text-align: center;
+    display: none
+}
+
+#outro p {
+    margin: 0
+}
+
+#outro .outro-background {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background: url(../img/outro/background.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+#outro .outro-scoring {
+    top: 0;
+    left: 0;
+    background: url(../img/outro/background-scoring.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+#outro #qrcode {
+    margin: 0 auto;
+    display: none
+}
+
+#outro .outro-wrapper,#outro .score {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#outro .outro-wrapper {
+    position: relative;
+    z-index: 100
+}
+
+#outro .outro-wrapper .congrats h1 {
+    font-size: 0;
+    margin: 0
+}
+
+#outro .outro-wrapper .congrats h1 span {
+    margin: 0 5px
+}
+
+html[lang=zh_CN] #outro .outro-wrapper .congrats h1 span {
+    margin-left: 30px
+}
+
+html[lang=zh_TW] #outro .outro-wrapper .congrats h1 span {
+    margin-left: 10px
+}
+
+#outro .outro-wrapper .congrats h1 .alpha-a-medium {
+    margin: 0 1px 0 4px
+}
+
+#outro .outro-wrapper .congrats h1 .alpha-n-medium {
+    margin: 0 4px
+}
+
+#outro .outro-wrapper .congrats .sub {
+    font-family: Martell-Regular;
+    font-size: 7px;
+    letter-spacing: .65em;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 18px 0 30px
+}
+
+html[lang=vi_VNM] #outro .outro-wrapper .congrats .sub {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #outro .outro-wrapper .congrats .sub,html[lang=zh_TW] #outro .outro-wrapper .congrats .sub {
+    font-size: 11px
+}
+
+#outro .outro-wrapper .congrats .notice {
+    font-family: GaramondBE-Italic;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: .15em;
+    color: #fff
+}
+
+html[lang=vi_VNM] #outro .outro-wrapper .congrats .notice {
+    font-family: arial;
+    font-style: italic
+}
+
+html[lang=zh_CN] #outro .outro-wrapper .congrats .notice,html[lang=zh_TW] #outro .outro-wrapper .congrats .notice {
+    font-size: 15px
+}
+
+#outro .score .onshare-wechat {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+    z-index: 10
+}
+
+#outro .score .onshare-wechat .center-vertical {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -150px
+}
+
+#outro .score .onshare-wechat .center-vertical .qrcodewechat {
+    background: url(../img/share/wechat-onshare.jpg) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px
+}
+
+#outro .score .onshare-wechat .close {
+    position: absolute;
+    right: 40px;
+    top: 30px
+}
+
+#outro .score .onshare-wechat .close div {
+    height: 25px;
+    background-color: #fff;
+    width: 3px;
+    position: absolute
+}
+
+#outro .score .onshare-wechat .close .first {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#outro .score .onshare-wechat .close .second {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+#outro .score .squares {
+    position: relative;
+    height: 64px;
+    margin-bottom: 30%
+}
+
+#outro .score .squares .square {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    border: 2px solid #fff;
+    -webkit-backface-visibility: hidden
+}
+
+#outro .score .items,#outro .score .title,#outro .score .total {
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    color: #fff
+}
+
+#outro .score .squares .square.first {
+    opacity: .5
+}
+
+#outro .score .squares .square.second {
+    opacity: .7;
+    -moz-transform: rotate(7deg);
+    -moz-transform-origin: bottom left;
+    -webkit-transform: rotate(7deg);
+    -webkit-transform-origin: bottom left;
+    -o-transform: rotate(7deg);
+    -o-transform-origin: bottom left;
+    -ms-transform: rotate(7deg);
+    -ms-transform-origin: bottom left;
+    transform: rotate(7deg);
+    transform-origin: bottom left
+}
+
+#outro .score .squares .square.third {
+    -moz-transform: rotate(14deg);
+    -moz-transform-origin: bottom left;
+    -webkit-transform: rotate(14deg);
+    -webkit-transform-origin: bottom left;
+    -o-transform: rotate(14deg);
+    -o-transform-origin: bottom left;
+    -ms-transform: rotate(14deg);
+    -ms-transform-origin: bottom left;
+    transform: rotate(14deg);
+    transform-origin: bottom left
+}
+
+#outro .score .title {
+    font-family: Martell-Regular;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: .5em;
+    margin-bottom: 12%;
+    margin-left: 12px
+}
+
+html[lang=vi_VNM] #outro .score .title {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #outro .score .title,html[lang=zh_TW] #outro .score .title {
+    font-size: 20px
+}
+
+#outro .score .total {
+    font-family: Martell-Regular;
+    font-size: 88px;
+    line-height: 88px;
+    margin-bottom: 4%
+}
+
+html[lang=vi_VNM] #outro .score .total {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+#outro .score .total span {
+    margin: 0 15px
+}
+
+#outro .score .items {
+    font-family: Martell-Regular;
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: .5em;
+    margin-bottom: 50px
+}
+
+html[lang=vi_VNM] #outro .score .items {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #outro .score .items,html[lang=zh_TW] #outro .score .items {
+    font-size: 18px
+}
+
+html[lang=zh_CN] #outro .score .items .scoreresult,html[lang=zh_TW] #outro .score .items .scoreresult {
+    margin-right: -15px
+}
+
+#outro .score .replay {
+    margin-bottom: 26px
+}
+
+#outro .outro-popin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1,34,52,.95);
+    z-index: 10;
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+#outro .outro-popin .close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    padding: 10px;
+    width: 13px;
+    height: 14px
+}
+
+#outro .outro-popin .close span {
+    -moz-transform: scale(.5);
+    -moz-transform-origin: top left;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: top left;
+    -o-transform: scale(.5);
+    -o-transform-origin: top left;
+    -ms-transform: scale(.5);
+    -ms-transform-origin: top left;
+    transform: scale(.5);
+    transform-origin: top left
+}
+
+#outro .outro-popin .logo {
+    position: absolute;
+    background: url(../img/intro/logo.png) no-repeat;
+    background-size: 88px 61px;
+    width: 88px;
+    height: 61px;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -44px
+}
+
+#outro .outro-popin .inner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#outro .outro-popin .inner .share {
+    font-family: Martell-Regular;
+    font-size: 34px;
+    line-height: 14px;
+    letter-spacing: .3em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-left: 12px
+}
+
+html[lang=vi_VNM] #outro .outro-popin .inner .share {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #outro .outro-popin .inner .share,html[lang=zh_TW] #outro .outro-popin .inner .share {
+    font-size: 28px
+}
+
+#outro .outro-popin .inner .unique {
+    font-family: Martell-Regular;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: .1em;
+    margin-top: 10px
+}
+
+html[lang=vi_VNM] #outro .outro-popin .inner .unique {
+    font-family: arial;
+    text-transform: uppercase
+}
+
+html[lang=zh_CN] #outro .outro-popin .inner .unique,html[lang=zh_TW] #outro .outro-popin .inner .unique {
+    font-size: 15px
+}
+
+#outro .outro-popin .inner .unique a {
+    color: #fff;
+    text-decoration: underline
+}
+
+#outro .outro-popin .inner .ctas {
+    height: 164px;
+    overflow: hidden
+}
+
+#outro .outro-popin .inner .ctas .share-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 121px;
+    height: 121px;
+    line-height: 121px;
+    margin: 0 15px;
+    cursor: pointer
+}
+
+#outro .outro-popin .inner .ctas .share-item .border {
+    width: 112px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -55px;
+    margin-left: -55px;
+    background: url(../img/outro/square.png) no-repeat;
+    opacity: .3;
+    background-size: 112px 112px
+}
+
+#outro .outro-popin .inner .ctas .share-item .icons-outro {
+    display: inline-block;
+    vertical-align: middle;
+    -moz-transform: scale(.7);
+    -moz-transform-origin: center center;
+    -webkit-transform: scale(.7);
+    -webkit-transform-origin: center center;
+    -o-transform: scale(.7);
+    -o-transform-origin: center center;
+    -ms-transform: scale(.7);
+    -ms-transform-origin: center center;
+    transform: scale(.7);
+    transform-origin: center center
+}
+
+#outro .outro-popin .inner .ctas .share-item.share-weibo {
+    display: none
+}
+
+.compatibility-container {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center
+}
+
+.compatibility-container .degraded {
+    font-size: 7px;
+    letter-spacing: .6em;
+    text-align: center;
+    width: 184px;
+    margin: 5px auto 0;
+    line-height: 11px
+}
+
+.compatibility-container .dropdown {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+.compatibility-container .dropdown select {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0
+}
+
+.compatibility-container .dropdown span {
+    font-family: news-gothic-mt-bold;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .5em
+}
+
+.compatibility-container .dropdown .arrow {
+    background: url(../img/intro/arrow-bottom.png);
+    background-size: 12px 7px;
+    width: 12px;
+    height: 7px;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.compatibility-container .compatibility {
+    font-size: 11px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: .6em;
+    line-height: 28px;
+    font-family: Martell-Regular;
+    z-index: 1;
+    vertical-align: middle;
+    margin-left: 10px
+}
+
+html[lang=zh_CN] .compatibility-container .compatibility,html[lang=zh_TW] .compatibility-container .compatibility {
+    font-size: 11px
+}
+
+.compatibility-container .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/outro/background-scoring.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.alpha,.icons-intro,.icons-outro,.sprite {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat
+}
+
+.icons-intro {
+    background-image: url(../img/intro/_icons-home.png);
+    background-size: 205px 92.5px
+}
+
+.icon-cardboard {
+    width: 50px;
+    height: 26px;
+    background-position: -144px -62px
+}
+
+.icon-iphone {
+    width: 52px;
+    height: 26px;
+    background-position: -92.5px -61.5px
+}
+
+.icon-language {
+    width: 24px;
+    height: 24px;
+    background-position: -181px 0
+}
+
+.icon-logo {
+    width: 88.5px;
+    height: 61px;
+    background-position: -92.5px 0
+}
+
+.icon-share-square {
+    width: 92.5px;
+    height: 92.5px;
+    background-position: 0 0
+}
+
+.icon-wifi {
+    width: 20px;
+    height: 15px;
+    background-position: -181px -24px
+}
+
+.icons-outro {
+    background-image: url(../img/outro/icons-outro.png);
+    background-size: 55px 126px
+}
+
+.icon-close {
+    width: 26px;
+    height: 28px;
+    background-position: -2px -2px
+}
+
+.icon-fb {
+    width: 20px;
+    height: 43px;
+    background-position: -30px -2px
+}
+
+.icon-twitter {
+    width: 43px;
+    height: 34px;
+    background-position: -2px -47px
+}
+
+.icon-weibo {
+    width: 51px;
+    height: 41px;
+    background-position: -2px -83px
+}
+
+.sprite {
+    background-image: url(../img/outro/numbers.png)
+}
+
+.Martell_FrenchTouch_Alphabet_0000_9 {
+    width: 59px;
+    height: 80px;
+    background-position: -63px -160px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_8 {
+    width: 63px;
+    height: 80px;
+    background-position: 0 -160px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_7 {
+    width: 63px;
+    height: 80px;
+    background-position: 0 -240px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_6 {
+    width: 59px;
+    height: 80px;
+    background-position: -63px -240px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_5 {
+    width: 61px;
+    height: 80px;
+    background-position: 0 -320px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_4 {
+    width: 74px;
+    height: 80px;
+    background-position: 0 0
+}
+
+.Martell_FrenchTouch_Alphabet_0000_3 {
+    width: 59px;
+    height: 80px;
+    background-position: -60px -400px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_2 {
+    width: 60px;
+    height: 80px;
+    background-position: 0 -400px
+}
+
+.Martell_FrenchTouch_Alphabet_0000_1 {
+    width: 24px;
+    height: 80px;
+    background-position: -74px 0
+}
+
+.Martell_FrenchTouch_Alphabet_0000_0 {
+    width: 70px;
+    height: 80px;
+    background-position: 0 -80px
+}
+
+.alpha {
+    background-image: url(../img/intro/alpha/alpha.png);
+    background-size: 787px 25px
+}
+
+.alpha-a {
+    width: 32px;
+    height: 25px;
+    background-position: -38px 0
+}
+
+.alpha-a-medium {
+    width: 21px;
+    height: 16px;
+    background-position: -606px 0
+}
+
+.alpha-a-small {
+    width: 17px;
+    height: 13px;
+    background-position: -759px 0
+}
+
+.alpha-b {
+    width: 23px;
+    height: 25px;
+    background-position: -278px 0
+}
+
+.alpha-c {
+    width: 24px;
+    height: 25px;
+    background-position: -230px 0
+}
+
+.alpha-c-medium {
+    width: 15px;
+    height: 16px;
+    background-position: -659px 0
+}
+
+.alpha-d {
+    width: 25px;
+    height: 25px;
+    background-position: -130px 0
+}
+
+.alpha-e,.alpha-f {
+    width: 22px;
+    height: 25px
+}
+
+.alpha-e {
+    background-position: -393px 0
+}
+
+.alpha-f {
+    background-position: -415px 0
+}
+
+.alpha-g {
+    width: 24px;
+    height: 25px;
+    background-position: -254px 0
+}
+
+.alpha-g-medium {
+    width: 15px;
+    height: 16px;
+    background-position: -674px 0
+}
+
+.alpha-h {
+    width: 22px;
+    height: 25px;
+    background-position: -437px 0
+}
+
+.alpha-i {
+    width: 3px;
+    height: 25px;
+    background-position: -603px 0
+}
+
+.alpha-i-medium {
+    width: 2px;
+    height: 16px;
+    background-position: -757px 0
+}
+
+.alpha-j {
+    width: 18px;
+    height: 25px;
+    background-position: -585px 0
+}
+
+.alpha-k {
+    width: 22px;
+    height: 25px;
+    background-position: -459px 0
+}
+
+.alpha-l {
+    width: 20px;
+    height: 25px;
+    background-position: -546px 0
+}
+
+.alpha-l-medium {
+    width: 13px;
+    height: 16px;
+    background-position: -732px 0
+}
+
+.alpha-l-small {
+    width: 11px;
+    height: 13px;
+    background-position: -776px 0
+}
+
+.alpha-m {
+    width: 31px;
+    height: 25px;
+    background-position: -70px 0
+}
+
+.alpha-n {
+    width: 25px;
+    height: 25px;
+    background-position: -155px 0
+}
+
+.alpha-n-medium {
+    width: 16px;
+    height: 16px;
+    background-position: -627px 0
+}
+
+.alpha-o {
+    width: 25px;
+    height: 25px;
+    background-position: -180px 0
+}
+
+.alpha-o-medium {
+    width: 16px;
+    height: 16px;
+    background-position: -643px 0
+}
+
+.alpha-p {
+    width: 23px;
+    height: 25px;
+    background-position: -301px 0
+}
+
+.alpha-q {
+    width: 25px;
+    height: 25px;
+    background-position: -205px 0
+}
+
+.alpha-r {
+    width: 23px;
+    height: 25px;
+    background-position: -324px 0
+}
+
+.alpha-r-medium {
+    width: 15px;
+    height: 16px;
+    background-position: -689px 0
+}
+
+.alpha-s {
+    width: 19px;
+    height: 25px;
+    background-position: -566px 0
+}
+
+.alpha-s-medium {
+    width: 12px;
+    height: 16px;
+    background-position: -745px 0
+}
+
+.alpha-t {
+    width: 22px;
+    height: 25px;
+    background-position: -481px 0
+}
+
+.alpha-t-medium {
+    width: 14px;
+    height: 16px;
+    background-position: -704px 0
+}
+
+.alpha-u {
+    width: 21px;
+    height: 25px;
+    background-position: -525px 0
+}
+
+.alpha-u-medium {
+    width: 14px;
+    height: 16px;
+    background-position: -718px 0
+}
+
+.alpha-v {
+    width: 29px;
+    height: 25px;
+    background-position: -101px 0
+}
+
+.alpha-w {
+    width: 38px;
+    height: 25px;
+    background-position: 0 0
+}
+
+.alpha-x,.alpha-y {
+    width: 23px;
+    height: 25px
+}
+
+.alpha-x {
+    background-position: -347px 0
+}
+
+.alpha-y {
+    background-position: -370px 0
+}
+
+.alpha-z {
+    width: 22px;
+    height: 25px;
+    background-position: -503px 0
+}

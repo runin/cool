@@ -1,0 +1,94 @@
+{
+     "desktop": {
+        "title" : "La French Touch by Martell",
+        "subtitleFT" : "An unexpected journey", 
+        "notice1" : "Please visit this page from your mobile",
+        "notice2" : "For iOS8+ or Android 4.4+"
+        },     
+        
+    "home":{
+        "startBtn": "continue"
+    },
+    
+    "nowebgl":{
+        "text": "Sorry, but your </br> browser does not</br> seem to support</br> WebGL technology.</br> Please download one </br> of the following </br> browsers :",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "yandex":"Yandex",
+        "ucbrowser":"UC-Browser",
+        "choose":"Choose your browser"
+    },
+    
+	"compatibility":{
+        "text": "Your browser seems </br> not to support webgl.</br> Please download</br> another browser:",
+        "chrome":"Chrome",
+        "firefox":"Firefox",
+        "choose":"Choose your browser",
+        "continue":"or Continue",
+        "degraded": "experience may be <br> degraded"
+    },
+
+    "intro": {
+        "legals" : "<span class='line1'>You must be of legal</span> </br> <span class='line2'>age in your country</span> </br> <span class='line3'>to enjoy the journey</span>",
+        "langue" : "language",
+        "enterBtn" : "continue",
+        "subtitleFT" : "the unexpected journey",
+        "launchXP" : "Start the experience",
+        "get" : "Get a free Cardboard",
+        "getyour" : "Get your",
+        "immersive" : "for immersive 3D experience",
+        "order" : "Get a free cardboard",
+        "ordernow" : "Order Now",
+        "play" : "start the experience",
+        "launch" : "launch",
+        "skipBtn" : "Skip steps",
+        "launchBtn" : "launch",
+        "loading" : "loading",
+        "titleLoader" : "Place your phone</br>into the Cardboard",
+        "bestxp" : "To fully enjoy the experience, connect to wi-fi and deactivate your screen auto-lock",
+        "tutorial" : "<span class='line1'>Control the swift </span><br><span  class='line2'>along its path and</span><br><span  class='line3'>catch the items to</span><br><span class='line4'>score points.</span>"
+    },
+    
+    "outro": {
+        "congrats": {
+            "sub" : "you have completed the journey",
+            "notice" : "You can now remove your device<br/>from the cardboard.",
+            "congratstitle" : "Congratulation"
+        },
+        "score": {
+            "title" : "highscore",
+            "items1": "",
+            "items2": "items collected",
+            "points" : "pts",
+            "replay" : "replay",
+            "share" : "share",
+            "congratulation" : "congratulations!",
+            "onshare" : "长按二维码关注<br>马爹利名士微信<br>加入派对锋潮"
+        },
+         "share": {
+            "title" : "La French Touch by Martell",
+            "item1" : "On my journey to Shanghai, I collected",
+            "item2" : "electrifying items. Can you top that?"
+        },
+   
+        "popin": {
+            "share" : "share",
+            "link" : "LaFrenchTouch.unique.url"
+        }
+    },
+    "meta": {
+        "defaut" : {
+            "title": "La French Touch by Martell",
+            "description": "The unexpected journey"
+        },
+        "score": {
+            "title": "La French Touch by Martell",
+            "description1": "On my journey to Shanghai, I collected",
+            "description2": "electrifying items. Can you top that?"
+        },
+        "other": {
+            "title": "La French Touch by Martell."
+        }
+    }
+
+}
